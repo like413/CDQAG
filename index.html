@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="author" href="https://like413.github.io/CDQAG">
+  <title>Show Me What and Where has Changed? Question Answering and Grounding for Remote Sensing Change Detection</title>
+  <meta name="description" content="Show Me What and Where has Changed? Question Answering and Grounding for Remote Sensing Change Detection">
+  <meta name="keywords"
+    content="CDQAG; Question Answering; Question Grounding; Change Detection; Remote Sensing; CDQAG Dataset; Ke Li; Xidian University">
+
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="Show Me What and Where has Changed? Question Answering and Grounding for Remote Sensing Change Detection">
+  <meta property="og:title" content="Show Me What and Where has Changed? Question Answering and Grounding for Remote Sensing Change Detection" />
+  <meta property="og:description" content="Show Me What and Where has Changed? Question Answering and Grounding for Remote Sensing Change Detection" />
+  <meta property="og:url" content="https://like413.github.io/CDQAG" />
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1500" />
+  <meta property="og:image:height" content="630" />
+
+
+  <meta name="twitter:title" content="Show Me What and Where has Changed? Question Answering and Grounding for Remote Sensing Change Detection">
+  <meta name="twitter:description" content="Show Me What and Where has Changed? Question Answering and Grounding for Remote Sensing Change Detection">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords"
+    content="CDQAG; Question Answering; Question Grounding; Change Detection; Remote Sensing; CDQAG Dataset; Ke Li; Xidian University">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+  <link rel="icon" type="image/x-icon" href="static/images/logo.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="static/images/logo.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="static/images/logo.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="static/images/logo.png">
+  <link rel="manifest" href="/site.webmanifest">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+  <script type="text/javascript" async
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+  <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+	    tex2jax: {
+	        inlineMath: [['$','$'], ['\\(','\\)']],
+	        processEscapes: true
+	    }
+	});
+    </script>
+</head>
+
+<body>
+
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+    <div class="navbar-menu">
+    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+      <a class="navbar-item" href="https://like413.github.io/">
+      <span class="icon">
+          <i class="fas fa-home"></i>
+      </span>
+      </a>
+      <!-- <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">
+          Challenges
+        </a>
+        <div class="navbar-dropdown">
+          <a class="navbar-item" href="https://like413.github.io/CDQAG">
+            CDQAG Dataset Page
+          </a>
+        </div>
+      </div> -->
+    </div>
+  </div>
+  </nav>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">Show Me What and Where has Changed? <br>
+              Question Answering and Grounding for Remote Sensing Change Detection</h1>
+            <div class="is-size-5 publication-authors">
+
+              <span class="author-block">
+                <a href="https://like413.github.io/">Ke Li</a><sup>1</sup>,&nbsp;</span>
+              <span class="author-block">
+                <a href="">Fuyu Dong</a><sup>1</sup>,&nbsp;</span>
+              <span class="author-block">
+                <a href="https://wangdi-xidian.github.io/" target="_blank">Di Wang</a><sup>1 <object id="object" data="static/images/envelope.svg"
+                    width="16" height="16" type="image/svg+xml"></object> </sup>,&nbsp;</span>
+              <span class="author-block">
+                <a href="" target="_blank">Shaofeng Li</a><sup>1 <object id="object" data="static/images/envelope.svg"
+                    width="16" height="16" type="image/svg+xml"></object> </sup>,&nbsp;</span>
+              <span class="author-block">
+                <a href="https://web.xidian.edu.cn/wangquan/index.html">Quan Wang</a><sup>1</sup>,&nbsp;</span>
+              <span class="author-block">
+                <a href="https://see.xidian.edu.cn/faculty/xbgao/">Xinbo Gao</a><sup>1,2</sup>,&nbsp;</span>
+              <span class="author-block">
+                <a href="https://www.chuatatseng.com/">Tat-Seng Chua</a><sup>3</sup>,&nbsp;</span>
+            </div>
+
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">
+                1. Xidian University, 2. Chongqing University of Posts and Telecommunications,
+            </div>
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">
+                3. National University of Singapore
+            </div>
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">
+                <object id="object" data="static/images/envelope.svg" width="20" height="20" type="image/svg+xml"
+                  style="position:relative;top:3px;"></object> Corresponding Author
+            </div>
+
+            <div class="column has-text-centered">
+              <div class="publication-links">
+
+<!--                 <span class="link-block">
+                  <a href=""
+                    target="_blank" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                    </span>
+                    <span>PDF</span>
+                  </a>
+                </span> -->
+
+                <span class="link-block">
+                  <a href="https://github.com/like413/VisTA" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-database"></i>
+                    </span>
+                    <span>Dataset</span>
+                  </a>
+                </span>
+
+                <span class="link-block">
+                  <a href="https://github.com/like413/VisTA" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/2410.23828" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>CDQAG arXiv</span>
+                </a>
+              </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Teaser video-->
+  <section class="hero teaser">
+    <div class="container is-max-desktop">
+      <div class="hero-body" id="Figure1">
+        <center><img src="static/DemoImages/1.png" border="0" width="100%"></center>
+        <!-- <h2 class="subtitle has-text-centered"> -->
+        <div align="center">
+          <p style="text-align:justify; text-justify:inter-ideograph;width:100%">Figure 1. Change detection (CD)
+            identifies surface changes from multi-temporal images. Classic visual question answering (VQA) only supports
+            textual answers. In comparison, the proposed change detection qusetion answering and grounding
+            (<b>CDQAG</b>) supports well-founded answers, i.e., textual answers (“what has changed”) and relevant visual
+            feedback (“where has changed”)</p>
+        </div><br>
+      </div>
+    </div>
+  </section>
+
+  <section class="section hero is-light">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p style="text-align:justify; text-justify:inter-ideograph;">
+              Remote sensing change detection aims to perceive changes occurring on the Earth's surface from remote
+              sensing data in different periods, and feeds these changes back to humans. However, most existing methods
+              only focus on detecting change regions, lacking the ability to interact with users for identifying changes
+              that user expected. In this paper, we introduce a new benchmark named <b>C</b>hange <b>D</b>etection
+              <b>Q</b>uestion <b>A</b>nswering and <b>G</b>rounding (<b>CDQAG</b>), which extends the traditional change
+              detection task by providing interpretable textual answers and intuitive visual evidence. 
+              It encompasses 10 essential land-cover categories and 8 comprehensive question types, which provides a large-scale and diverse dataset for remote sensing applications. 
+              To this end, we construct the first CDQAG dataset, termed <b>QAG-360K</b>, comprising over 360K triplets of questions,
+              textual answers, and corresponding high-quality visual masks. Based on this, we present <b>VisTA</b>, 
+              a simple yet effective baseline method that unifies the tasks of question answering and grounding by delivering both visual and textual answers. 
+              Our method achieves state-of-the-art results on both the classic CDVQA and the proposed CDQAG datasets. 
+              Extensive qualitative and quantitative experimental results provide useful insights for the development of better CDQAG models, and we hope that our work can inspire further research in this important yet underexplored direction.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  </div>
+  <section class="section" id="Visualization">
+    <div class="container is-max-desktop content">
+      <h2 class="title">Task: CDQAG</h2>
+      CDQAG takes a pair of remote sensing images and a question as input. The output is a textual answer and a
+      corresponding visual segmentation. Unlike classic VQA methods that provide only natural language responses, CDQAG
+      can offer both textual answers and correlative visual explanations (as shown in <a href="#Figure1">Figure 1</a>),
+      which is
+      critical for reasonable remote sensing interpretation.
+    </div>
+  </section>
+
+  </div>
+  <section class="section" id="Visualization">
+    <div class="container is-max-desktop content">
+      <h2 class="title">Benchmark Dataset: QAG-360K</h2>
+      <center><img src="static/DemoImages/2.png" border="0" width="100%"></center>
+      <center>
+        Figure 2. Examples of the proposed QAG-360K dataset.</p>
+      </center>
+    </div>
+  </section>
+
+  </div>
+  <section class="section" id="Visualization">
+    <div class="container is-max-desktop content">
+      <h2 class="title">Benchmark Method: VisTA</h2>
+      <center><img src="static/DemoImages/3.png" border="0" width="100%"></center>
+      <div align="center">
+        <p style="text-align:justify; text-justify:inter-ideograph;width:100%">Figure 3. The architecture of our
+          VisTA model as a simple baseline for the CDQAG task. Firstly, the given two remote sensing images and a
+          question are encoded into vision features $F_v$ and language features $[F_s,F_w]$, respectively. $F_v$ and
+          $F_w$ are fed into a vision-language decoder to produce the refined multimodal features $F_{vl}$. Next, the
+          Q&A selector is used to generate Q&A features $F_s$. Subsequently, $F_s$ is activated as a selection weight
+          to filter the pixel decoder's output, resulting in coarse mask $\text{M}_c$. Finally, the text-visual answer
+          decoder is employed to predict the textual answer and the corresponding visual answer.</p>
+      </div><br>
+    </div>
+  </section>
+
+  <section class="section" id="Experiments">
+    <div class="container is-max-desktop content">
+      <h2 class="title">Experiments</h2>
+      We benchmark the state-of-the-art methods on AGC-360K and CDVQA datasets to the best of our knowledge.<br><br>
+      <center><img src="static/DemoImages/table1.png" border="0" width="99%"></center>
+      <center>
+        <caption><b>Table 1. VisTA results: comparison on QAG-360K test set</b></caption>
+      </center><br><br>
+      <center><img src="static/DemoImages/table2.png" border="0" width="99%"></center>
+      <center>
+        <caption><b>Table 2. VisTA results: comparison on CDVQA test set</b></caption>
+      </center>
+    </div>
+  </section>
+
+  <!-- End image carousel -->
+  <section class="section" id="Downloads">
+    <div class="container is-max-desktop content">
+      <h2 class="title">Downloads</h2>
+      <center>
+        <ul>
+          <li class="grid">
+            <div class="griditem">
+              <a href="https://arxiv.org/abs/2410.23828" target="_blank" class="imageLink"><img src="static/DemoImages/paper.png"></a><br>
+                <a href="" target="_blank" class="imageLink">arXiv</a>
+            </div>
+          </li>
+          <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -->
+          <li class="mygrid">
+            <div class="mygriditem">
+              <a href="https://github.com/like413/VisTA" target="_blank" class="imageLink"><img src="static/DemoImages/dataset.png"></a><br>
+              <a href="https://github.com/like413/VisTA" target="_blank">🔥 QAG-360K Dataset</a>
+            </div>
+          </li>
+        </ul><br><br>
+    </div>
+  </section>
+
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      Please consider to cite CDQAG if it helps your research.
+      <pre>
+        <code>@misc{li2024changedquestionansweringgrounding,
+      title={Show Me What and Where has Changed? Question Answering and Grounding for Remote Sensing Change Detection}, 
+      author={Ke Li and Fuyu Dong and Di Wang and Shaofeng Li and Quan Wang and Xinbo Gao and Tat-Seng Chua},
+      year={2024},
+      eprint={2410.23828},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2410.23828}, 
+}
+        </code>
+      </pre>
+    </div>
+  </section>
+
+  <!-- <section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          
+          <div class="publication-video">
+            <iframe  src="https://www.youtube.com/embed/COJVqz_sgNU?rel=0&amp;showinfo=0"
+            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </section> -->
+
+  <footer class="footer">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content">
+
+            <p>
+
+              <center>
+                <font size=2>© Ke Li | Last updated: 1/11/2024</font>
+              </center>
+            </p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
